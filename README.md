@@ -110,7 +110,7 @@ type ResponseType = {
 }
 
 type PriceItem = {
-	country: string
+    country: string
     currentPrice: number
     lowestRecordedPrice: number
 }
@@ -132,9 +132,6 @@ type PriceItem = {
 
 思考如何尽量的使用函数式编程思维来解决上述问题，如果没有太多的想法的话也可以用传统的命令式
 
-## 其他
-如果你觉得上述项目不能很好的展现你的优势，你也可以自行选择任何你认为合适的项目进行提交
-
 函数式编程三板斧：`Filter`、`Map`、`Reduce`
 
 
@@ -145,3 +142,6 @@ type PriceItem = {
 
 - 画出页面组件关系图（或列出组件树）
 - 当用户点击某一项国家/地区的价格时，将该行调整到列表的第一行（考察状态提升、事件绑定）
+
+## 其他
+如果你觉得上述项目不能很好的展现你的优势，你也可以自行选择任何你认为合适的项目进行提交
