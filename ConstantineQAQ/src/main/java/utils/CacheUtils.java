@@ -11,7 +11,7 @@ public class CacheUtils {
     public  static final String strFormDict = "formDictformMain";
 
     /************************************************后台 缓存 ********************************************************/
-    public  static final  String findAllScore="findAllScore";//所有房地产信息
+    public  static final  String findAllScore="findAllScore";//所有成绩信息
 
     /************************************************后台 缓存  end********************************************************/
 
