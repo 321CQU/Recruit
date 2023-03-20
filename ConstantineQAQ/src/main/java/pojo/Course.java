@@ -1,61 +1,84 @@
 package pojo;
 
 public class Course {
-    private String name;
-
-    private String code;
-
-    private String course_num;
-
-    private String dept;
-
-    private int credit;
-
+    private Integer code;
     private String instructor;
+    private String name;
+    private Float credit;
+    private String course_num;
+    private Integer sessionId;
 
-    private Session session;
+    public Integer getCode() {
+        return code;
+    }
 
-    public void setName(String name){
-        this.name = name;
-    }
-    public String getName(){
-        return this.name;
-    }
-    public void setCode(String code){
+    public void setCode(Integer code) {
         this.code = code;
     }
-    public String getCode(){
-        return this.code;
+
+    public String getInstructor() {
+        return instructor;
     }
-    public void setCourse_num(String course_num){
-        this.course_num = course_num;
-    }
-    public String getCourse_num(){
-        return this.course_num;
-    }
-    public void setDept(String dept){
-        this.dept = dept;
-    }
-    public String getDept(){
-        return this.dept;
-    }
-    public void setCredit(int credit){
-        this.credit = credit;
-    }
-    public int getCredit(){
-        return this.credit;
-    }
-    public void setInstructor(String instructor){
+
+    public void setInstructor(String instructor) {
         this.instructor = instructor;
     }
-    public String getInstructor(){
-        return this.instructor;
+
+    public String getName() {
+        return name;
     }
-    public void setSession(Session session){
-        this.session = session;
+
+    public void setName(String name) {
+        this.name = name;
     }
-    public Session getSession(){
-        return this.session;
+
+    public Float getCredit() {
+        return credit;
     }
+
+    public void setCredit(Float credit) {
+        this.credit = credit;
+    }
+
+    public String getCourse_num() {
+        return course_num;
+    }
+
+    public void setCourse_num(String course_num) {
+        this.course_num = course_num;
+    }
+
+    public Integer getSessionId() {
+        return sessionId;
+    }
+
+    public void setSessionId(Integer sessionId) {
+        this.sessionId = sessionId;
+    }
+
+    @Override
+    public String toString() {
+        return "Course{" +
+                "code=" + code +
+                ", instructor='" + instructor + '\'' +
+                ", name='" + name + '\'' +
+                ", credit=" + credit +
+                ", course_num='" + course_num + '\'' +
+                ", sessionId=" + sessionId +
+                '}';
+    }
+
+    public Course(Integer code, String instructor, String name, Float credit, String course_num, Integer sessionId) {
+        this.code = code;
+        this.instructor = instructor;
+        this.name = name;
+        this.credit = credit;
+        this.course_num = course_num;
+        this.sessionId = sessionId;
+    }
+
+    public Course() {
+    }
+
 
 }

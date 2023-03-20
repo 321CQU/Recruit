@@ -2,12 +2,21 @@ package utils;
 
 import com.alibaba.fastjson2.JSONArray;
 import com.alibaba.fastjson2.JSONObject;
+import com.alibaba.fastjson2.JSONReader;
+import pojo.Score;
+
+import java.util.List;
 
 
 public class JsonUtils {
-    public static void parseJson(String jsonString) {
-        JSONObject json = JSONObject.parseObject(jsonString);
-                 int status = json.getIntValue("status");
+    public static List<Score> parseJson(String jsonString) {
+//        JSONObject json = JSONObject.parseObject(jsonString);
+
+        JSONArray dataArray = JSONArray.parseArray(jsonString);
+        List<Score> scores = dataArray.toJavaList(Score.class);
+        return scores;
+
+/*        int status = json.getIntValue("status");
                  String msg = json.getString("msg");
                  JSONArray scoresArray = json.getJSONObject("data").getJSONArray("scores");
 
@@ -53,7 +62,7 @@ public class JsonUtils {
                      System.out.println("    Study Nature: " + studyNature);
                      System.out.println("    Course Nature: " + courseNature);
                      System.out.println("***********************************");
-                 }
+                 }*/
     }
 
 /*    public static void parseJson(String jsonString){

@@ -26,5 +26,23 @@ public class Session
     public boolean getIs_autumn(){
         return this.is_autumn;
     }
+
+    public Session(int id, int year, boolean is_autumn) {
+        this.id = id;
+        this.year = year;
+        this.is_autumn = is_autumn;
+    }
+
+    public Session() {
+    }
+
+    @Override
+    public String toString() {
+        return "Session{" +
+                "id=" + id +
+                ", year=" + year +
+                ", is_autumn=" + is_autumn +
+                '}';
+    }
 }
 

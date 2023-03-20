@@ -2,16 +2,16 @@ package controller;
 
 import com.alibaba.fastjson2.JSONArray;
 import com.alibaba.fastjson2.JSONObject;
-import utils.OkHttpApi;
+import utils.OkHttpUtils;
 
 import java.io.IOException;
 
 public class GetToken {
     public static String getToken() throws IOException {
-        OkHttpApi api = new OkHttpApi();
+        OkHttpUtils api = new OkHttpUtils();
         JSONObject object = new JSONObject(){{
             put("username","07099115");
-            put("password","123456789");
+            put("password","123456789wyn");
             put("apiKey","hLrOSgvl5eUzJR1sSeen9g");
             put("applyType","Recruit");
         }};

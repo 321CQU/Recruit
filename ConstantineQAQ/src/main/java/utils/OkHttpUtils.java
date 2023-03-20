@@ -6,11 +6,11 @@ import okhttp3.*;
 import java.io.IOException;
 
 
-public class OkHttpApi {
+public class OkHttpUtils {
     OkHttpClient client = new OkHttpClient();
     public static final MediaType JSON = MediaType.get("application/json");
 
-    public OkHttpApi() throws IOException {
+    public OkHttpUtils() throws IOException {
     }
 
     //Get请求
