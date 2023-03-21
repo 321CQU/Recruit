@@ -35,7 +35,7 @@ class Recruit321cquApplicationTests {
     void testUserService() {
         User u1 = new User();
         u1.setUserId("111");
-        u1.setPassword("22");
+//        u1.setPassword("");
         userService.save(u1);
     }
 
@@ -43,9 +43,9 @@ class Recruit321cquApplicationTests {
     void testTokenService(){
         Token t1 = new Token();
         t1.setUserId("141");
-        t1.setToken("sasdasdasd");
+        t1.setToken("");
         t1.setRefreshTokenExpireTime(10000);
-        t1.setRefreshToken("asdasdasdasgfsdf");
+        t1.setRefreshToken("");
         t1.setRefreshTokenExpireTime(200000);
         tokenService.save(t1);
     }
@@ -58,8 +58,8 @@ class Recruit321cquApplicationTests {
     @Test
     void testJedis(){
         Token token = new Token();
-        token.setToken("123456");
-        token.setRefreshToken("abcdefg");
+        token.setToken("");
+        token.setRefreshToken("");
         redisUtils.set("B",token);
     }
 
@@ -73,8 +73,8 @@ class Recruit321cquApplicationTests {
     @Test
     void testCheckUsernameAndPasswordFromDB(){
         User user = new User();
-        user.setPassword("123asdads");
-        user.setUserId("12asd");
+        user.setPassword("");
+        user.setUserId("");
         Boolean aBoolean;
         try {
             aBoolean = userService.checkUsernameAndPasswordFromDB(user);
