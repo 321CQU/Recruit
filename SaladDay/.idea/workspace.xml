@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1a17e82a-6998-47d0-8339-08061fa0a7d5" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/Recruit_321cqu" beforeDir="false" afterPath="$PROJECT_DIR$/Recruit_321cqu" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recruit_321cqu/logs/web_info.log" beforeDir="false" afterPath="$PROJECT_DIR$/Recruit_321cqu/logs/web_info.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recruit_321cqu/src/main/java/cn/saladday/recruit_321cqu/controller/GradesQueryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Recruit_321cqu/src/main/java/cn/saladday/recruit_321cqu/controller/GradesQueryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recruit_321cqu/src/main/java/cn/saladday/recruit_321cqu/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Recruit_321cqu/src/main/java/cn/saladday/recruit_321cqu/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recruit_321cqu/src/main/java/cn/saladday/recruit_321cqu/entity/Grades.java" beforeDir="false" afterPath="$PROJECT_DIR$/Recruit_321cqu/src/main/java/cn/saladday/recruit_321cqu/entity/Grades.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Recruit_321cqu/src/main/java/cn/saladday/recruit_321cqu/utils/formatBean/FormatSessionBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/Recruit_321cqu/src/main/java/cn/saladday/recruit_321cqu/utils/formatBean/FormatSessionBean.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Recruit_321cqu" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="E:\apache-maven-3.6.0\mvn_repositories" />
+        <option name="mavenHome" value="E:/apache-maven-3.6.0" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="E:\apache-maven-3.6.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2NJpIRyuKGG4UVTibccMkMUqqiJ" />
+  <component name="ProjectViewState">
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "G:/JavaWorkspace/321CQU_Recruit/321CQU_Recruit/SaladDay",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "preferences.sourceCode.XML",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Recruit321cquApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Recruit_321cqu" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.saladday.recruit_321cqu.Recruit321cquApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="1a17e82a-6998-47d0-8339-08061fa0a7d5" name="变更" comment="" />
+      <created>1679391959261</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1679391959261</updated>
+      <workItem from="1679391960918" duration="2946000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Recruit_321cqu/src/main/java/cn/saladday/recruit_321cqu/controller/LoginController.java</url>
+          <line>123</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
