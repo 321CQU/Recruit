@@ -1,0 +1,67 @@
+2023-03-21 17:48:21.907 [restartedMain] INFO  c.saladday.recruit_321cqu.Recruit321cquApplication - Starting Recruit321cquApplication using Java 17.0.5 on DESKTOP-B3K1H4S with PID 15272 (G:\JavaWorkspace\321CQU_Recruit\321CQU_Recruit\SaladDay\Recruit_321cqu\target\classes started by SaladDay in G:\JavaWorkspace\321CQU_Recruit\321CQU_Recruit\SaladDay)
+2023-03-21 17:48:21.908 [restartedMain] INFO  c.saladday.recruit_321cqu.Recruit321cquApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-21 17:48:21.937 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-21 17:48:21.937 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-21 17:48:22.471 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-21 17:48:22.473 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-21 17:48:22.494 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-03-21 17:48:23.068 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-21 17:48:23.076 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-21 17:48:23.076 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-21 17:48:23.076 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-21 17:48:23.143 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-21 17:48:23.143 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1205 ms
+2023-03-21 17:48:23.250 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-03-21 17:48:23.327 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-03-21 17:48:24.054 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-03-21 17:48:24.128 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-21 17:48:24.325 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-21 17:48:24.343 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-21 17:48:24.344 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-03-21 17:48:24.358 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-03-21 17:48:24.375 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-03-21 17:48:24.459 [restartedMain] INFO  c.saladday.recruit_321cqu.Recruit321cquApplication - Started Recruit321cquApplication in 2.885 seconds (JVM running for 3.434)
+2023-03-21 17:48:24.462 [restartedMain] INFO  c.saladday.recruit_321cqu.Recruit321cquApplication - ::application starting...
+2023-03-21 17:48:38.014 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 17:48:38.014 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-21 17:48:38.015 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-21 17:48:38.638 [http-nio-8080-exec-2] INFO  c.s.r.controller.GradesQueryController - -----通过数据库返回数据-----
+2023-03-21 17:48:38.639 [http-nio-8080-exec-2] INFO  c.s.r.controller.GradesQueryController - start-----存入数据缓存中-----
+2023-03-21 17:48:38.648 [http-nio-8080-exec-2] INFO  cn.saladday.recruit_321cqu.utils.RedisUtils - 存入redis成功，key：124，value：FormatBean(scores=[FormatGradeBean(session=FormatSessionBean(id=null, year=2023, is_autumn=false), course=FormatCourseBean(name=测试课程0, code=0, course_num=null, dept=null, credit=1.0, instructor=测试教师0, session=null), score=64, study_nature=初修, course_nature=必修), FormatGradeBean(session=FormatSessionBean(id=null, year=2023, is_autumn=false), course=FormatCourseBean(name=测试课程1, code=1, course_num=null, dept=null, credit=1.0, instructor=测试教师1, session=null), score=55, study_nature=初修, course_nature=必修), FormatGradeBean(session=FormatSessionBean(id=null, year=2023, is_autumn=false), course=FormatCourseBean(name=测试课程2, code=2, course_num=null, dept=null, credit=1.0, instructor=测试教师2, session=null), score=71, study_nature=初修, course_nature=必修), FormatGradeBean(session=FormatSessionBean(id=null, year=2023, is_autumn=false), course=FormatCourseBean(name=测试课程3, code=3, course_num=null, dept=null, credit=1.0, instructor=测试教师3, session=null), score=67, study_nature=初修, course_nature=必修), FormatGradeBean(session=FormatSessionBean(id=null, year=2023, is_autumn=false), course=FormatCourseBean(name=测试课程4, code=4, course_num=null, dept=null, credit=1.0, instructor=测试教师4, session=null), score=0, study_nature=初修, course_nature=必修), FormatGradeBean(session=FormatSessionBean(id=null, year=2023, is_autumn=false), course=FormatCourseBean(name=测试课程5, code=5, course_num=null, dept=null, credit=1.0, instructor=测试教师5, session=null), score=90, study_nature=初修, course_nature=必修), FormatGradeBean(session=FormatSessionBean(id=null, year=2023, is_autumn=false), course=FormatCourseBean(name=测试课程6, code=6, course_num=null, dept=null, credit=1.0, instructor=测试教师6, session=null), score=71, study_nature=初修, course_nature=必修), FormatGradeBean(session=FormatSessionBean(id=null, year=2023, is_autumn=false), course=FormatCourseBean(name=测试课程7, code=7, course_num=null, dept=null, credit=1.0, instructor=测试教师7, session=null), score=53, study_nature=初修, course_nature=必修), FormatGradeBean(session=FormatSessionBean(id=null, year=2023, is_autumn=false), course=FormatCourseBean(name=测试课程8, code=8, course_num=null, dept=null, credit=1.0, instructor=测试教师8, session=null), score=85, study_nature=初修, course_nature=必修), FormatGradeBean(session=FormatSessionBean(id=null, year=2023, is_autumn=false), course=FormatCourseBean(name=测试课程9, code=9, course_num=null, dept=null, credit=1.0, instructor=测试教师9, session=null), score=88, study_nature=初修, course_nature=必修)])
+2023-03-21 17:48:38.649 [http-nio-8080-exec-2] INFO  c.s.r.controller.GradesQueryController - end-----存入数据缓存中-----
+2023-03-21 17:48:38.650 [http-nio-8080-exec-2] INFO  cn.saladday.recruit_321cqu.common.OptLogAspect - start-----aop-log-----
+2023-03-21 18:25:33.910 [http-nio-8080-exec-5] INFO  c.s.recruit_321cqu.controller.LoginController - ------通过授权服务器刷新token------
+2023-03-21 18:25:34.184 [http-nio-8080-exec-5] INFO  c.s.recruit_321cqu.controller.LoginController - -----状态码200 OK-----
+2023-03-21 18:26:14.719 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2023-03-21 18:26:14.720 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
+2023-03-21 18:26:19.035 [restartedMain] INFO  c.saladday.recruit_321cqu.Recruit321cquApplication - Starting Recruit321cquApplication using Java 17.0.5 on DESKTOP-B3K1H4S with PID 10400 (G:\JavaWorkspace\321CQU_Recruit\321CQU_Recruit\SaladDay\Recruit_321cqu\target\classes started by SaladDay in G:\JavaWorkspace\321CQU_Recruit\321CQU_Recruit\SaladDay)
+2023-03-21 18:26:19.036 [restartedMain] INFO  c.saladday.recruit_321cqu.Recruit321cquApplication - No active profile set, falling back to 1 default profile: "default"
+2023-03-21 18:26:19.072 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-03-21 18:26:19.073 [restartedMain] INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-03-21 18:26:19.665 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2023-03-21 18:26:19.667 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-03-21 18:26:19.686 [restartedMain] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 8 ms. Found 0 Redis repository interfaces.
+2023-03-21 18:26:20.334 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2023-03-21 18:26:20.344 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2023-03-21 18:26:20.345 [restartedMain] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2023-03-21 18:26:20.345 [restartedMain] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.71]
+2023-03-21 18:26:20.416 [restartedMain] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-03-21 18:26:20.416 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1343 ms
+2023-03-21 18:26:20.533 [restartedMain] INFO  c.a.d.s.b.a.DruidDataSourceAutoConfigure - Init DruidDataSource
+2023-03-21 18:26:20.620 [restartedMain] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+2023-03-21 18:26:21.463 [restartedMain] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2023-03-21 18:26:21.550 [restartedMain] INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-03-21 18:26:21.779 [restartedMain] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2023-03-21 18:26:21.798 [restartedMain] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2023-03-21 18:26:21.799 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Context refreshed
+2023-03-21 18:26:21.813 [restartedMain] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper - Found 1 custom documentation plugin(s)
+2023-03-21 18:26:21.833 [restartedMain] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner - Scanning for api listing references
+2023-03-21 18:26:21.928 [restartedMain] INFO  c.saladday.recruit_321cqu.Recruit321cquApplication - Started Recruit321cquApplication in 3.26 seconds (JVM running for 4.12)
+2023-03-21 18:26:21.931 [restartedMain] INFO  c.saladday.recruit_321cqu.Recruit321cquApplication - ::application starting...
+2023-03-21 18:26:26.505 [http-nio-8080-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-03-21 18:26:26.506 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-03-21 18:26:26.507 [http-nio-8080-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-03-21 18:26:26.552 [http-nio-8080-exec-2] INFO  c.s.recruit_321cqu.controller.LoginController - ------通过授权服务器刷新token------
+2023-03-21 18:26:30.857 [http-nio-8080-exec-2] INFO  c.s.recruit_321cqu.controller.LoginController - -----状态码200 OK-----
+2023-03-21 18:27:05.284 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+2023-03-21 18:27:05.288 [SpringApplicationShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
