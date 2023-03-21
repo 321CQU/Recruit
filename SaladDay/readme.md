@@ -20,6 +20,24 @@
 
 ## 项目设计(后端---服务器开发)
 
+#### 目录结构：
+
+- SaladDay
+  - logs 日志
+  - Recruit_321cqu MAVEN项目文件，源代码
+  - readme.md
+  - recruitApi.html api文档
+
+### How to start it：
+
+- maven构建
+
+- 启动Redis-service 使用默认端口6379，主机localhost，默认无密码
+  - 若要改请在applicaiton.yml中更改
+- 启动mysql 使用默认端口3306, 主机localhost,账号密码在application.yml中更改
+- 启动Recruit321cquApplication
+- 前缀域名为 http://localhost:8080
+
 #### 技术:
 
 - SpringBoot
@@ -56,7 +74,7 @@
 
   <img src="https://saladday-figure-bed.oss-cn-chengdu.aliyuncs.com/img/image-20230321181546469.png" alt="image-20230321181546469" style="zoom:67%;" />
 
-- 单元测试：由于没有相关规范，本人单元测试还是用的比较随心所欲。对于以上功能的测试，会提供postman的测试文档，实现100%覆盖。
+- 单元测试：由于没有相关规范，本人单元测试还是用的比较随心所欲。对于以上功能的测试，会提供apiFox的测试文档(如果需要测试的话，可以QQ私信，提供apifox的文件，现提供了Api文档在SaladDay目录下)，实现100%覆盖。
 
 #### Api说明：
 
