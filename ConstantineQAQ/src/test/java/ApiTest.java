@@ -1,9 +1,13 @@
-import controller.GetData;
-import controller.GetToken;
+import com.wyn.controller.GetData;
+import com.wyn.controller.GetToken;
+import com.wyn.pojo.Course;
+import com.wyn.pojo.Score;
+import com.wyn.service.Impl.ScoreServiceImpl;
 import org.junit.Test;
-import utils.OkHttpUtils;
+import com.wyn.utils.OkHttpUtils;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -85,4 +89,14 @@ public class ApiTest {
             if(flag) break;
         }
     }
+
+    @Test
+    public void testPutDataToDatabase() throws IOException{
+        ScoreServiceImpl scoreService = new ScoreServiceImpl();
+        List<Course> courses = GetData.getCourse();
+        for (Course course : courses){
+            scoreService.addCourse(course);
+        }
+    }
+
 }

@@ -1,6 +1,6 @@
-package utils;
+package com.wyn.utils;
 
-import pojo.Cache;
+import com.wyn.pojo.Cache;
 
 import java.util.ArrayList;
 import java.util.HashMap;

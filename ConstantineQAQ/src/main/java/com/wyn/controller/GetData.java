@@ -1,27 +1,35 @@
-package controller;
+package com.wyn.controller;
 
 import com.alibaba.fastjson2.JSON;
 import com.alibaba.fastjson2.JSONArray;
 import com.alibaba.fastjson2.JSONObject;
-import jdk.swing.interop.SwingInterOpUtils;
-import pojo.Cache;
-import pojo.Course;
-import pojo.Score;
-import utils.CacheUtils;
-import utils.JsonUtils;
-import utils.OkHttpUtils;
+import com.wyn.pojo.Course;
+import com.wyn.pojo.Score;
+import com.wyn.service.Impl.ScoreServiceImpl;
+import lombok.extern.slf4j.Slf4j;
+import com.wyn.pojo.Cache;
+import com.wyn.utils.CacheUtils;
+import com.wyn.utils.JsonUtils;
+import com.wyn.utils.OkHttpUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
 
+@Slf4j
 public class GetData {
     /**
      * 获取成绩的对象集合
      * @throws IOException
      */
+    public static final Logger logger= LoggerFactory.getLogger(GetData.class);
+
+
     public static List<Score> getScores() throws IOException {
+        ScoreServiceImpl scoreService = new ScoreServiceImpl();
         String key= CacheUtils.findAllScore;
         List<Score> scores;
         OkHttpUtils api = new OkHttpUtils();
@@ -32,23 +40,29 @@ public class GetData {
         JSONObject jsonObject = JSON.parseObject(jsonStringWithCharset);
         JSONArray jsonArray = jsonObject.getJSONObject("data").getJSONArray("scores");
         Cache cache = CacheUtils.getCacheInfo(key);
-//        List<Score> scores = JsonUtils.parseJson(jsonArray.toString());
         if (null == cache){
             scores=JsonUtils.parseJson(jsonArray.toString());
             cache = new Cache();
             cache.setKey(key);
             cache.setValue(scores);
             CacheUtils.putCache(key, cache);
+/*            for(Score score : scores){
+                scoreService.addScore(score);
+            }*/
         }else {
             scores=(List<Score>) cache.getValue();
         }
-        //  return estateMapper.getAllEstateByUserId(submitUserId);
         return scores;
-/*        for (Score score : scores) {
+    }
+
+    public static List<Course> getCourse() throws IOException{
+        List<Score> scores = getScores();
+        List<Course> courses = new ArrayList<>();
+        for (Score score : scores){
             Course course = score.getCourse();
-            String courseName = course.getName();
-            Integer courseScore = score.getScore();
-        }*/
+            courses.add(course);
+        }
+        return courses;
     }
 
     /**
@@ -112,4 +126,6 @@ public class GetData {
         }
         return courseNatures;
     }
+
+
 }

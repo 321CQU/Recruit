@@ -1,8 +1,8 @@
-package controller;
+package com.wyn.controller;
 
 import com.alibaba.fastjson2.JSONArray;
 import com.alibaba.fastjson2.JSONObject;
-import utils.OkHttpUtils;
+import com.wyn.utils.OkHttpUtils;
 
 import java.io.IOException;
 

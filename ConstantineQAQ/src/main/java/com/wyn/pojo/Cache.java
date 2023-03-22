@@ -1,4 +1,4 @@
-package pojo;
+package com.wyn.pojo;
 
 public class Cache {
     private String key;//缓存ID

@@ -1,4 +1,4 @@
-package pojo;
+package com.wyn.pojo;
 
 public class Score {
     private Integer id;
