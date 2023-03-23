@@ -394,8 +394,8 @@ def login(session: Session,
 
 
 session=requests.session()
-username='07078373'
-password='R985211daxue'
+username=''
+password=''
 service='https://lib.cqu.edu.cn/'
 timeout=10
 force_relogin=False
