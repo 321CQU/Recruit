@@ -1,0 +1,18 @@
+2023-03-22 09:55:42  [ main:0 ] - [ INFO ]  https://api.321cqu.com/v1/authorization/login status: 1 msg: success
+2023-03-22 09:55:44  [ main:2527 ] - [ INFO ]  https://api.321cqu.com/v1/authorization/refreshToken status: 1 msg: success
+2023-03-22 09:55:47  [ main:5025 ] - [ INFO ]  https://api.321cqu.com/v1/recruit/score status: 1 msg: success
+2023-03-22 09:55:53  [ main:11520 ] - [ ERROR ]  保存失败：请检查数据库的数据
+2023-03-22 10:29:38  [ main:0 ] - [ INFO ]  https://api.321cqu.com/v1/authorization/login status: 1 msg: success
+2023-03-22 10:29:38  [ main:27 ] - [ INFO ]  https://api.321cqu.com/v1/authorization/refreshToken status: 1 msg: success
+2023-03-22 10:29:38  [ main:53 ] - [ INFO ]  https://api.321cqu.com/v1/authorization/login status: 1 msg: success
+2023-03-22 10:29:38  [ main:75 ] - [ INFO ]  https://api.321cqu.com/v1/recruit/score status: 1 msg: success
+2023-03-22 10:29:38  [ main:170 ] - [ INFO ]  This is api message.
+2023-03-22 10:29:38  [ main:170 ] - [ ERROR ]  This is error message.
+2023-03-22 10:29:38  [ main:214 ] - [ INFO ]  https://api.321cqu.com/v1/authorization/login status: 1 msg: success
+2023-03-22 10:29:38  [ main:241 ] - [ INFO ]  https://api.321cqu.com/v1/recruit/score status: 1 msg: success
+2023-03-22 10:29:57  [ main:18327 ] - [ INFO ]  https://api.321cqu.com/v1/recruit/score status: 1 msg: success
+2023-03-22 10:29:57  [ main:18398 ] - [ INFO ]  https://api.321cqu.com/v1/authorization/login status: 1 msg: success
+2023-03-22 10:29:57  [ main:18422 ] - [ INFO ]  https://api.321cqu.com/v1/authorization/login status: 1 msg: success
+2023-03-22 10:29:57  [ main:18450 ] - [ INFO ]  https://api.321cqu.com/v1/recruit/score status: 1 msg: success
+2023-03-22 10:29:57  [ main:18452 ] - [ ERROR ]  Timer already cancelled.
+2023-03-22 10:29:57  [ main:18452 ] - [ ERROR ]  
