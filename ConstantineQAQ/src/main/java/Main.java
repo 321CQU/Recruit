@@ -1,31 +1,43 @@
 import com.wyn.controller.GetData;
-import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.wyn.pojo.Cache;
+import com.wyn.pojo.Score;
+import com.wyn.utils.CacheUtils;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Scanner;
 
-@Slf4j
 public class Main {
-    public static final Logger logger= LoggerFactory.getLogger(Main.class);
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        while(true){
+        String key= CacheUtils.findAllScore;
+        for(;;){
+            System.out.println("请输入你要执行的操作:(查询成绩|退出)");
             String command = sc.next();
             boolean flag = false;
             switch (command) {
                 case "查询成绩" -> {
                     int n = 0;
                     try {
-                        n = GetData.getCourseName().size();
+                        List<Score> scores = GetData.getScores();
+                        n = scores.size();
+                        for (int i = 0; i < n; i++) {
+                            System.out.print(scores.get(i).getCourse().getName() + ":");
+                            System.out.println(scores.get(i).getScore());
+                        }
                     } catch (IOException e) {
-                        logger.info("查询错误" + e.getMessage());
+                        System.out.println("查询错误" + e.getMessage());
                     }
                 }
                 case "退出" -> flag = true;
+
+                default -> System.out.println("你的输入有误，请重新输入");
             }
-            if(flag) break;
+            if(flag) {
+                CacheUtils.clearOnly(key);
+                sc.close();
+                System.exit(-1);
+            }
         }
     }
 }

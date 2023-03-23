@@ -26,6 +26,19 @@ public class ScoreServiceImpl implements ScoreService {
     }
 
     @Override
+    public void deleteAll() {
+        SqlSessionFactory sqlSessionFactory = SqlSessionFactoryUtils.getSqlSessionFactory();
+
+        SqlSession sqlSession = sqlSessionFactory.openSession();
+
+        ScoreMapper mapper = sqlSession.getMapper(ScoreMapper.class);
+
+        mapper.deleteAll();
+        sqlSession.commit();
+        sqlSession.close();
+    }
+
+    @Override
     public void addScore(Score score) {
         SqlSessionFactory sqlSessionFactory = SqlSessionFactoryUtils.getSqlSessionFactory();
 

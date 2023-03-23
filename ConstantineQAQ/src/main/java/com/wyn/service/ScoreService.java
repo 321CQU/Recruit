@@ -10,6 +10,8 @@ public interface ScoreService {
 
     void addCourse(Course course);
 
+    void deleteAll();
+
     void addScore(Score score);
 
     List<Score> selectAll();

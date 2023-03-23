@@ -6,29 +6,27 @@ import com.alibaba.fastjson2.JSONObject;
 import com.wyn.pojo.Course;
 import com.wyn.pojo.Score;
 import com.wyn.service.Impl.ScoreServiceImpl;
-import lombok.extern.slf4j.Slf4j;
 import com.wyn.pojo.Cache;
 import com.wyn.utils.CacheUtils;
 import com.wyn.utils.JsonUtils;
 import com.wyn.utils.OkHttpUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Timer;
 
-@Slf4j
 public class GetData {
     /**
      * 获取成绩的对象集合
      * @throws IOException
      */
-    public static final Logger logger= LoggerFactory.getLogger(GetData.class);
+    private static final long Delay = 3600L;
 
 
     public static List<Score> getScores() throws IOException {
+        Timer timer = new Timer();
         ScoreServiceImpl scoreService = new ScoreServiceImpl();
         String key= CacheUtils.findAllScore;
         List<Score> scores;
@@ -52,6 +50,7 @@ public class GetData {
         }else {
             scores=(List<Score>) cache.getValue();
         }
+
         return scores;
     }
 

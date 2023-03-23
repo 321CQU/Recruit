@@ -69,30 +69,14 @@ public class ApiTest {
         }
     }
 
-    public static void main(String[] args) throws IOException {
-        Scanner sc = new Scanner(System.in);
-        while(true){
-            String command = sc.next();
-            boolean flag = false;
-            switch (command) {
-                case "查询成绩" -> {
-                    int n = GetData.getCourseName().size();
-                    for (int i = 0; i < n; i++) {
-                        System.out.print(GetData.getCourseInstructor().get(i) + ":  ");
-                        System.out.print(GetData.getCourseName().get(i) + "成绩:");
-                        System.out.println(+GetData.getCourseScore().get(i));
-                        System.out.println("---------------------");
-                    }
-                }
-                case "退出" -> flag = true;
-            }
-            if(flag) break;
-        }
-    }
-
+    /**
+     * 将查到的成绩放入数据库中，但是只能用一次
+     * @throws IOException
+     */
     @Test
     public void testPutDataToDatabase() throws IOException{
         ScoreServiceImpl scoreService = new ScoreServiceImpl();
+        scoreService.deleteAll();
         List<Course> courses = GetData.getCourse();
         for (Course course : courses){
             scoreService.addCourse(course);
