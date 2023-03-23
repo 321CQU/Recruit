@@ -11,8 +11,6 @@ public class GetToken {
         OkHttpUtils api = new OkHttpUtils();
         JSONObject object = new JSONObject(){{
             //gitGuardian会检测密码所以我删了
-            put("apiKey","hLrOSgvl5eUzJR1sSeen9g");
-            put("applyType","Recruit");
         }};
         String s = object.toString();
         String post = api.post("https://api.321cqu.com/v1/authorization/login", s);
