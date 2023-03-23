@@ -70,8 +70,8 @@ def access_mycqu(session: Session, add_to_header: bool = True) -> Dict[str, str]
 
 session1=requests.session()
 session2=requests.session()
-username='07078373'
-password='R985211daxue'
+username=''
+password=''
 service=None  #'http://lib.cqu.edu.cn/'
 timeout=10
 force_relogin=False
