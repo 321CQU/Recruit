@@ -10,8 +10,7 @@ public class GetToken {
     public static String getToken() throws IOException {
         OkHttpUtils api = new OkHttpUtils();
         JSONObject object = new JSONObject(){{
-            put("username","07099115");
-            put("password","123456789wyn");
+            //gitGuardian会检测密码所以我删了
             put("apiKey","hLrOSgvl5eUzJR1sSeen9g");
             put("applyType","Recruit");
         }};
