@@ -20,8 +20,8 @@ import re
 
 sess=requests.session()
 data={
-    "username":"07078373",
-    "password":"R985211daxue"
+    "username":"",
+    "password":""
 }
 AUTHSERVER_URL = "http://authserver.cqu.edu.cn/authserver/login"
 login_url='https://self.cqu.edu.cn'
